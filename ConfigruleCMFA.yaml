@@ -35,21 +35,21 @@ proxies:
   - name: AKUN1
     server: 104.17.3.81
     port: 443
-    type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    type: vmess
+    uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: bonjert.bonjert86.workers.dev
+    servername: vms.lifetime05.workers.dev
     network: ws
     ws-opts:
-      path: /178.128.80.43-443
+      path: /172.105.62.71-2443
       headers:
-        Host: bonjert.bonjert86.workers.dev
+        Host: vms.lifetime05.workers.dev
     udp: true
   - name: AKUN2
-    server: quiz.int.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
     uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
@@ -167,4 +167,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
