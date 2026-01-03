@@ -34,19 +34,16 @@ dns:
 proxies:
   - name: AKUN1
     server: 104.17.3.81
-    type: vmess
     port: 443
-    uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 86768774-70b2-4c15-80c3-02066fb1e3b6
     skip-cert-verify: true
-    servername: vms.lifetime05.workers.dev
+    sni: bonjert.bonjert86.workers.dev
     network: ws
     ws-opts:
-      path: /172.105.62.71-2443
+      path: /8.222.220.81-25435
       headers:
-        Host: vms.lifetime05.workers.dev
+        Host: bonjert.bonjert86.workers.dev
     udp: true
   - name: AKUN2
     server: 104.17.3.81
@@ -294,6 +291,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
