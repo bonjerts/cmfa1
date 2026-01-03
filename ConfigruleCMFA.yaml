@@ -33,50 +33,50 @@ dns:
     - 112.215.203.254
 proxies:
   - name: AKUN1
-    server: quiz.int.vidio.com
-    port: 80
-    type: vmess
-    uuid: 396415b0-6f7d-4df3-9d50-1a3ff9115b1a
+    server: 104.17.3.81
+    port: 443
+    type: vless
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: id2-ray.ipservers.xyz
+    servername: bonjert.bonjert86.workers.dev
     network: ws
     ws-opts:
-      path: /JAGOANSSH/
+      path: /178.128.80.43-443
       headers:
-        Host: id2-ray.ipservers.xyz
+        Host: bonjert.bonjert86.workers.dev
     udp: true
   - name: AKUN2
     server: quiz.int.vidio.com
     port: 443
     type: vless
-    uuid: 9cf9a9b0-2e2e-45bd-ac6f-5eaa44e30cfe
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id1vless.ipservers.xyz
+    servername: bonjert.bonjert86.workers.dev
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /43.218.77.16-1443
       headers:
-        Host: id1vless.ipservers.xyz
+        Host: bonjert.bonjert86.workers.dev
     udp: true
   - name: AKUN3
-    server: quiz.int.vidio.com
+    server: 104.17.3.81
     port: 443
     type: vless
-    uuid: aae98731-898a-4cd3-8c7f-d09af2387d63
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: id2vless.ipservers.xyz
+    servername: bonjert.bonjert86.workers.dev
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /43.218.77.16-1443
       headers:
-        Host: id2vless.ipservers.xyz
+        Host: bonjert.bonjert86.workers.dev
     udp: true
 
 proxy-groups:
@@ -167,3 +167,4 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
